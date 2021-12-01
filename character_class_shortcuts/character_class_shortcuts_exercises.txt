@@ -1,0 +1,13 @@
+1. /\s...\s/
+
+2. This pattern doesn't match the words 'Doc', 'red', 'box', or 'Hup' because those don't meet the requirements. 'Doc' isn't preceded by whitespace, and 'Hup' is followed by an exclamation point after it while 'box' has a period after it, both of which aren't whitespace characters.
+
+'red' would match if its preceding space wasn't already being used by a match for 'big', which is preceded and followed by a space, thus meeting the pattern.
+
+'2 3 ' matches because there's a space before '2', then three characters (a period matches any characters and thus is matching '2', ' ', and then '3' here), and then a following space. This matches the pattern of whitespace, any three characters, and then whitespace again.
+
+3. /\s\h\h\h\h\s/ (This works for Ruby since it has the \h and \H character class shortcuts available).
+
+For JavaScript, it's necessary to write a longer form character class for hexadecimal digits: /[\dA-F]/ (and possibly add an i and/or g after the ending forward slash if necessary).
+
+4. /[a-z][a-z][a-z]/i
