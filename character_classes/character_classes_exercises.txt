@@ -1,0 +1,19 @@
+1. /[kKs]/
+
+2. /[bc][aou]t/i
+
+3. /[0-9A-Ja-j]
+
+4. /[A-WYZa-wyz]/
+
+5. /[^xX]/ isn't a valid answer to the previous exercise because it would match every single character that isn't an 'x' or 'X' as opposed to only matching non-X letters.
+
+6. /[^A-Za-z]/
+
+7. No, /(ABC|abc)/ and /[Aa][Bb][Cc]/ are not equivalent regex. The first one will match either 'ABC' or 'abc' but not any mixed-case version. The second regex will match any combination of a followed by b then followed by c no matter what the case of each letter is. 
+
+'AbC' will match the second regex but not the first.
+
+8. I believe /abc/i and /[Aa][Bb][Cc]/ are equivalent as currently written.
+
+9. /\[\^[A-Za-z0-9]-[A-Za-z0-9]\]/
