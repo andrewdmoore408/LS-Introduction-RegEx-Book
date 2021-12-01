@@ -1,0 +1,13 @@
+1. /K/
+
+2. /h/i
+
+Using /(h|H)/ instead (utilizing alternation) would be good if we want to match either upper- or lowercase 'h' but not make the entire RegEx pattern case-insensitive.
+
+3. /dragon/
+
+4. /(banana|orange|apple|strawberry)/
+
+5. /(,| )
+
+6. /(blue|black)berry/
